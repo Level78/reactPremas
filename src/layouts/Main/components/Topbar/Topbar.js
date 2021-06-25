@@ -9,11 +9,11 @@ import {
   ListItem,
   ListItemIcon,
   Popover,
-  Typography,
+  // Typography,
   IconButton,
   Button,
 } from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import MenuIcon from '@material-ui/icons/Menu';
 import { Image, DarkModeToggler } from 'components/atoms';
 
@@ -134,114 +134,114 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
   const supportedPages = pages.pages;
   const account = pages.account;
 
-  const MenuGroup = props => {
-    const { item } = props;
-    return (
-      <List disablePadding>
-        <ListItem disableGutters>
-          <Typography
-            variant="body2"
-            color="primary"
-            className={classes.menuGroupTitle}
-          >
-            {item.groupTitle}
-          </Typography>
-        </ListItem>
-        {item.pages.map((page, i) => (
-          <ListItem disableGutters key={i} className={classes.menuGroupItem}>
-            <Typography
-              variant="body1"
-              component={'a'}
-              href={page.href}
-              className={clsx(classes.navLink, 'submenu-item')}
-              color="textSecondary"
-              onClick={handleClose}
-            >
-              {page.title}
-            </Typography>
-          </ListItem>
-        ))}
-      </List>
-    );
-  };
+  // const MenuGroup = props => {
+  //   const { item } = props;
+  //   return (
+  //     <List disablePadding>
+  //       <ListItem disableGutters>
+  //         <Typography
+  //           variant="body2"
+  //           color="primary"
+  //           className={classes.menuGroupTitle}
+  //         >
+  //           {item.groupTitle}
+  //         </Typography>
+  //       </ListItem>
+  //       {item.pages.map((page, i) => (
+  //         <ListItem disableGutters key={i} className={classes.menuGroupItem}>
+  //           <Typography
+  //             variant="body1"
+  //             component={'a'}
+  //             href={page.href}
+  //             className={clsx(classes.navLink, 'submenu-item')}
+  //             color="textSecondary"
+  //             onClick={handleClose}
+  //           >
+  //             {page.title}
+  //           </Typography>
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //   );
+  // };
 
-  const LandingPages = () => {
-    const { services, apps, web } = landings.children;
-    return (
-      <div className={classes.menu}>
-        <div className={classes.menuItem}>
-          <MenuGroup item={services} />
-          <MenuGroup item={apps} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={web} />
-        </div>
-      </div>
-    );
-  };
+  // const LandingPages = () => {
+  //   const { services, apps, web } = landings.children;
+  //   return (
+  //     <div className={classes.menu}>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={services} />
+  //         <MenuGroup item={apps} />
+  //       </div>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={web} />
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
-  const SupportedPages = () => {
-    const {
-      career,
-      helpCenter,
-      company,
-      contact,
-      blog,
-      portfolio,
-    } = supportedPages.children;
-    return (
-      <div className={classes.menu}>
-        <div className={classes.menuItem}>
-          <MenuGroup item={career} />
-          <MenuGroup item={helpCenter} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={company} />
-          <MenuGroup item={contact} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={blog} />
-          <MenuGroup item={portfolio} />
-        </div>
-      </div>
-    );
-  };
+  // const SupportedPages = () => {
+  //   const {
+  //     career,
+  //     helpCenter,
+  //     company,
+  //     contact,
+  //     blog,
+  //     portfolio,
+  //   } = supportedPages.children;
+  //   return (
+  //     <div className={classes.menu}>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={career} />
+  //         <MenuGroup item={helpCenter} />
+  //       </div>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={company} />
+  //         <MenuGroup item={contact} />
+  //       </div>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={blog} />
+  //         <MenuGroup item={portfolio} />
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
-  const AccountPages = () => {
-    const { settings, signup, signin, password, error } = account.children;
-    return (
-      <div className={classes.menu}>
-        <div className={classes.menuItem}>
-          <MenuGroup item={settings} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={signup} />
-          <MenuGroup item={signin} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={password} />
-          <MenuGroup item={error} />
-        </div>
-      </div>
-    );
-  };
+  // const AccountPages = () => {
+  //   const { settings, signup, signin, password, error } = account.children;
+  //   return (
+  //     <div className={classes.menu}>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={settings} />
+  //       </div>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={signup} />
+  //         <MenuGroup item={signin} />
+  //       </div>
+  //       <div className={classes.menuItem}>
+  //         <MenuGroup item={password} />
+  //         <MenuGroup item={error} />
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
-  const renderPages = id => {
-    if (id === 'landing-pages') {
-      return <LandingPages />;
-    }
-    if (id === 'supported-pages') {
-      return <SupportedPages />;
-    }
-    if (id === 'account') {
-      return <AccountPages />;
-    }
-  };
+  // const renderPages = id => {
+  //   if (id === 'landing-pages') {
+  //     return <LandingPages />;
+  //   }
+  //   if (id === 'supported-pages') {
+  //     return <SupportedPages />;
+  //   }
+  //   if (id === 'account') {
+  //     return <AccountPages />;
+  //   }
+  // };
 
   return (
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
       <div className={classes.logoContainer}>
-        <a href="/" title="thefront">
+        <a href="/" title="">
           <Image
             className={classes.logoImage}
             src={themeMode === 'light' ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg' : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'}
@@ -263,20 +263,20 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
                   openedPopoverId === page.id ? classes.listItemActive : '',
                 )}
               >
-                <Typography
+                {/* <Typography
                   variant="body1"
                   color="textPrimary"
                   className={clsx(classes.listItemText, 'menu-item')}
                 >
                   {page.title}
-                </Typography>
+                </Typography> */}
                 <ListItemIcon className={classes.listItemIcon}>
-                  <ExpandMoreIcon
+                  {/* <ExpandMoreIcon
                     className={
                       openedPopoverId === page.id ? classes.expandOpen : ''
                     }
                     fontSize="small"
-                  />
+                  /> */}
                 </ListItemIcon>
               </ListItem>
               <Popover
@@ -295,14 +295,55 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
                 }}
                 classes={{ paper: classes.popover }}
               >
-                <div>{renderPages(page.id)}</div>
+                {/* <div>{renderPages(page.id)}</div> */}
               </Popover>
             </div>
           ))}
+
+<ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+            <Button
+              variant="outlined"
+              component="a"
+              href="/"
+            >
+              Home
+            </Button>
+          </ListItem>
+
+          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+            <Button
+              variant="outlined"
+              component="a"
+              href="/ourstory"
+            >
+             Solutions
+            </Button>
+          </ListItem>
+
+          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+            <Button
+              variant="outlined"
+              component="a"
+              href="/ourstory"
+            >
+              Products
+            </Button>
+          </ListItem>
+
+          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+            <Button
+              variant="outlined"
+              component="a"
+              href="/ourstory"
+            >
+              Carrer
+            </Button>
+          </ListItem>
+
           <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
             <DarkModeToggler themeMode={themeMode} onClick={() => themeToggler()} />
           </ListItem>
-          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+          {/* <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
             <Button
               variant="outlined"
               component="a"
@@ -310,17 +351,25 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
             >
               Documentation
             </Button>
-          </ListItem>
+          </ListItem> */}
+
+        
+
+
+
+
+
+
           <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
             <Button
               variant="contained"
-              color="primary"
+              color="#4a7895"
               component="a"
               target="blank"
-              href="https://material-ui.com/store/items/the-front-landing-page/"
+              href="https://in.linkedin.com/company/premas-lifesciences/"
               className={classes.listItemButton}
             >
-              Buy Now
+              CONNECT
             </Button>
           </ListItem>
         </List>

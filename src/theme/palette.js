@@ -1,7 +1,7 @@
 export const light = {
   "alternate": {
-    "main": "#0F4C75",
-    "dark": "#0F4C75",
+    "main": "#4a7895",
+    "dark": "#225670",
   },
   "cardShadow": "rgba(23, 70, 161, .11)",
   "type": "light",
@@ -18,18 +18,18 @@ export const light = {
     "contrastText": "rgba(0, 0, 0, 0.87)"
   },
   "text": {
-    "primary": "#46B5D1",
-    "secondary": "	#000000",
+    "primary": "#00A8CC",
+    "secondary": "#1a1818",
     "thirdly": '#ffff',
     
   },
   "divider": "rgba(0, 0, 0, 0.12)",
   "background": {
-    "paper": "#fff",
+    "paper": "#e8e8e8",
     "default": "#fff",
     "level2": "#f5f5f5",
     "level1": "#fff",
-    "footer": "#1b1642",
+    "footer": "#4a7895",
   },
 };
 
@@ -57,12 +57,12 @@ export const dark = {
     "contrastText": "rgba(0, 0, 0, 0.87)"
   },
   "text": {
-    "primary": "#EEEEEF",
+    "primary": "#5bbfdc",
     "secondary": "#AEB0B4",
   },
   "divider": "rgba(255, 255, 255, 0.12)",
   "background": {
-    "paper": "#1A202C",
+    "paper": "#263640",
     "default": "#121212",
     "level2": "#333",
     "level1": "#2D3748",

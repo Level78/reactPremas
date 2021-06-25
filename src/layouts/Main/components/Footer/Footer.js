@@ -100,7 +100,7 @@ const Footer = props => {
   const classes = useStyles();
 
   const landings = pages.landings;
-  const supportedPages = pages.pages;
+  // const supportedPages = pages.pages;
   const account = pages.account;
 
   const MenuGroup = props => {
@@ -143,32 +143,32 @@ const Footer = props => {
     );
   };
 
-  const SupportedPages = () => {
-    const {
-      career,
-      helpCenter,
-      company,
-      contact,
-      blog,
-      portfolio,
-    } = supportedPages.children;
-    return (
-      <div className={classes.menu}>
-        <div>
-          <MenuGroup item={career} />
-          <MenuGroup item={helpCenter} />
-        </div>
-        <div>
-          <MenuGroup item={company} />
-          <MenuGroup item={contact} />
-        </div>
-        <div>
-          <MenuGroup item={blog} />
-          <MenuGroup item={portfolio} />
-        </div>
-      </div>
-    );
-  };
+  // const SupportedPages = () => {
+  //   const {
+  //     career,
+  //     helpCenter,
+  //     company,
+  //     contact,
+  //     blog,
+  //     portfolio,
+  //   } = supportedPages.children;
+  //   return (
+  //     <div className={classes.menu}>
+  //       <div>
+  //         <MenuGroup item={career} />
+  //         <MenuGroup item={helpCenter} />
+  //       </div>
+  //       <div>
+  //         <MenuGroup item={company} />
+  //         <MenuGroup item={contact} />
+  //       </div>
+  //       <div>
+  //         <MenuGroup item={blog} />
+  //         <MenuGroup item={portfolio} />
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
   const AccountPages = () => {
     const { settings, signup, signin, password, error } = account.children;
@@ -198,8 +198,8 @@ const Footer = props => {
                   <a href="/" title="thefront">
                     <Image
                       className={classes.logoImage}
-                      src="https://ik.imagekit.io/j6phbjneuop/PREMAS_OPTMIZED_CONTENT/logo/Premas_Life_Sciences_Logo_UWdZPig2o.png"
-                      alt="thefront"
+                      src=""
+                      alt="premaslifescience:logo"
                       lazy={false}
                     />
                   </a>
@@ -226,9 +226,9 @@ const Footer = props => {
               <Grid item>
                 <LandingPages />
               </Grid>
-              <Grid item>
+              {/* <Grid item>
                 <SupportedPages />
-              </Grid>
+              </Grid> */}
               <Grid item>
                 <AccountPages />
               </Grid>

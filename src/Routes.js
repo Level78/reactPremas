@@ -162,7 +162,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/service"
+        path="/servicedcfvghj"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -173,7 +173,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/web-basic"
+        path="/web-basicsdfvgbhnjm"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -184,7 +184,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/desktop-app"
+        path="/desktop-appsdfcvgbhnj"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -195,7 +195,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/expo"
+        path="/exposxdcfvgbhnjmk"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -206,7 +206,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/agency"
+        path="/agencyxcvbnmxdfgv"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -217,7 +217,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/startup"
+        path="/startupdcfvgbnm,"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -228,7 +228,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/design-company"
+        path="/design-companyasdfvgbnm"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -239,7 +239,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/mobile-app"
+        path="/mobile-appsxdcfvgbhnjmk"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -250,7 +250,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/job-listing"
+        path="/OurStory"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -261,7 +261,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/rental"
+        path="/rentalasxdcfvgbhnjkmlxdcfvgbh"
         render={matchProps => (
           <WithLayout
             {...matchProps}
@@ -272,7 +272,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/cloud-hosting"
+        path="/sdrftghnjmkl34e5r6t7y8u9i"
         render={matchProps => (
           <WithLayout
             {...matchProps}
